@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Question from "./Question";
+import QuestionPlaceholder from './QuizPlaceholder'
 import { nanoid } from "nanoid";
 import Confetti from "react-confetti";
 
@@ -79,7 +80,16 @@ function Quiz() {
 
   return (
     <div className="quiz">
-      {quizElements}
+      {quiz.length > 0 
+      ? quizElements 
+      : [
+        <QuestionPlaceholder />, 
+        <QuestionPlaceholder />, 
+        <QuestionPlaceholder />, 
+        <QuestionPlaceholder />, 
+        <QuestionPlaceholder />
+      ]
+        }
       <button
         className="main-button"
         onClick={checked ? getQuiz : checkAnswers}
