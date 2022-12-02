@@ -191,7 +191,6 @@
 .main-button {
   padding: 10px;
   font-family: Play;
-  border: none;
   background: var(--dark-color);
   color: white;
   font-size: 20px;
@@ -216,5 +215,8 @@
   }
   .placeholder-question-answer {
     width: 100%;
+  }
+  .main-button {
+    transition: none;
   }
 }

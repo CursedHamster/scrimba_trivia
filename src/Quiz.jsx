@@ -83,11 +83,11 @@ function Quiz() {
       {quiz.length > 0 
       ? quizElements 
       : [
-        <QuestionPlaceholder />, 
-        <QuestionPlaceholder />, 
-        <QuestionPlaceholder />, 
-        <QuestionPlaceholder />, 
-        <QuestionPlaceholder />
+        <QuestionPlaceholder key={1} />, 
+        <QuestionPlaceholder key={2} />, 
+        <QuestionPlaceholder key={3} />, 
+        <QuestionPlaceholder key={4} />, 
+        <QuestionPlaceholder key={5} />
       ]
         }
       <button
