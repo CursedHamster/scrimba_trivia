@@ -209,9 +209,13 @@
 @media screen and (max-width: 420px) {
   .quiz {
     height: fit-content;
+    padding-bottom: 30px;
   }
   .answers {
     flex-direction: column;
+  }
+  .quiz .main-button {
+    margin: 20px 0;
   }
   .placeholder-question-answer {
     width: 100%;
