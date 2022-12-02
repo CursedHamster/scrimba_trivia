@@ -161,6 +161,7 @@
 
 .score {
   font-weight: bold;
+  color: var(--dark-color);
 }
 
 .error {
